@@ -252,8 +252,9 @@ Overall this would be how it would look like. Click the Create Monitor button at
 
 ## To do 
 
-1. Improve on the search of possible food.
-2. Fix set reminders feature.
+1. Fix Database design. User can only log one entry of meal due to database schema.
+   - subsequent entry leads to primary key duplicate error.
+3. Fix set reminders feature.
   - user can set meal reminders and reminder to take a break.
   - This is optional to the user. 
 4. Fix recommendation for users.
@@ -262,6 +263,7 @@ Overall this would be how it would look like. Click the Create Monitor button at
 7. send telegram stickers
 8. user statistics
    - download a summary of what the user has eaten during a predefined interval from the database.
+9. Improve on the search of possible food.
 
 ## Acknowledgements
 
