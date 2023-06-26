@@ -211,6 +211,14 @@ Overall this would be how it would look like. Click the Create Monitor button at
 - gotEat will find the option closest to the name of meal entered
 - select the option presented
 
+#### if the user input does not match with the database, the user can enter their own meal name. 
+
+  <img
+  src="/img/nofood.png"
+  alt="Alt text"
+  title="logmeal_start"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  
 ### "Meal entry logged successfully!" 
 
   <img
@@ -218,6 +226,16 @@ Overall this would be how it would look like. Click the Create Monitor button at
   alt="Alt text"
   title="logmeal_start"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+## /cancel
+- this feature allows user to cancel during the middle of their queries, restarting their entry
+  <img
+  src="/img/cancel.png"
+  alt="Alt text"
+  title="logmeal_start"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+- user can go back to the start and log their meal
 
 # Updates
 - We have made significant updates to our database hosting.
