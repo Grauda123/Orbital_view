@@ -6,6 +6,7 @@
 * [Technologies Used](#technologies-used)
 * [Setup](#setup)
 * [Usage](#usage)
+* [Updates from last milestone](#updates)
 * [To do](#to-do)
 * [Acknowledgements](#acknowledgements)
 
@@ -221,6 +222,12 @@ Overall this would be how it would look like. Click the Create Monitor button at
   alt="Alt text"
   title="logmeal_start"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+# Updates
+- We have recently made significant updates to our database hosting.
+- Previously, our users had to download a hosting solution, which essentially transformed their computers into hosts.
+- However, we have now transitioned to an online hosting platform, enabling us to make our database available online.
+- As part of this update, we have replaced XAMMP, the previous hosting tool, with PHPAdmin.
   
 ## To do
 
