@@ -127,15 +127,11 @@ Overall this would be how it would look like. Click the Create Monitor button at
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 
-
 ### Import the various packages
-#### configparser is used to read the config.ini file that was created
-> pip install configparser
-#### telethon is a library used to communicate the telegram API
-> pip install telethon
-#### mysqldb is used to connect to the mysql database
-> pip install mysqlclient
-
+#### python telegram 
+> pip install python-telegram-bot
+#### mysql module to run mysql statements
+> pip install mysql-connector-python
 
 ## Usage
 <!-- After completing the setup above, in the telegram search bar, type in `gotEat` or [vist](https://t.me/gotEatBot). --> 
@@ -224,23 +220,27 @@ Overall this would be how it would look like. Click the Create Monitor button at
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 # Updates
-- We have recently made significant updates to our database hosting.
+- We have made significant updates to our database hosting.
 - Previously, our users had to download a hosting solution, which essentially transformed their computers into hosts.
 - However, we have now transitioned to an online hosting platform, enabling us to make our database available online.
 - As part of this update, we have replaced XAMMP, the previous hosting tool, with PHPAdmin.
-  
-## To do
+- Improved the functions for easier user interation
+- For example:
+  - custom calender
+  - inline keyboard to minimise user activity.
+  - Searching for possible food when user input what they ate.
 
-1. Meal recommendations with calories
-   - recommends the user a different type of food everytime.
-2. option to set reminders
-   - user can set meal reminders and reminder to take a break.
-   - This is optional to the user. 
-3. user statistics
+## To do 
+
+1. Improve on the search of possible food.
+2. Fix set reminders feature.
+  - user can set meal reminders and reminder to take a break.
+  - This is optional to the user. 
+4. Fix recommendation for users. 
+5. Add the option to view and delete records for users.
+6. send telegram stickers
+7. user statistics
    - download a summary of what the user has eaten during a predefined interval from the database.
-4. excercise recommendation
-   - recommend different excercies based on which the user would like to target.
-5. send telegram stickers
 
 ## Acknowledgements
 
