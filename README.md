@@ -274,6 +274,11 @@ Here are the steps to follow before starting `gotEat`:
 
 ### "Meal entry logged successfully!" 
 
+  <img
+  src="/img/logmeal_successful.jpg"
+  alt="Alt text"
+  title="logmeal_start"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
   
 ## To do
 
