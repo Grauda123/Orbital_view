@@ -29,17 +29,22 @@ I have bad eating habits. As a student, I tend to be so occupied with my assignm
 - As a user, I would like to be reminded when to eat, drink water (as notifications).
 - As a user, I would like to receive recommendations for exercise plans. 
 
-## Features
-List the ready features here:
-- Log meal
-- Edit meal
-- Delete meal 
-
 ## Technologies Used
 - python 3.11
 - mysql
 - db4free (for mysql hosting)
 - UptimeRobot for continuous polling.
+
+# Updates
+- We have made significant updates to our database hosting.
+- Previously, our users had to download a hosting solution, which essentially transformed their own computers into servers. Our database was also local for each user.
+- Currently, we have now transitioned to an online hosting platform. Our database is also available online.
+- As part of this update, we have replaced XAMMP, the previous hosting tool, with PHPAdmin.
+- Improved the functions for easier user interation
+- For example:
+  - custom calender
+  - inline keyboards to minimise user activity.
+  - Searching for possible food when user input what they ate.
 
 ## Setup
 
@@ -237,16 +242,13 @@ Overall this would be how it would look like. Click the Create Monitor button at
 
 - user can go back to the start and log their meal
 
-# Updates
-- We have made significant updates to our database hosting.
-- Previously, our users had to download a hosting solution, which essentially transformed their computers into hosts.
-- However, we have now transitioned to an online hosting platform, enabling us to make our database available online.
-- As part of this update, we have replaced XAMMP, the previous hosting tool, with PHPAdmin.
-- Improved the functions for easier user interation
-- For example:
-  - custom calender
-  - inline keyboard to minimise user activity.
-  - Searching for possible food when user input what they ate.
+
+# Testing cases 
+  <img
+  src="/img/testcase_time.png"
+  alt="Alt text"
+  title="logmeal_start"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 ## To do 
 
@@ -254,10 +256,11 @@ Overall this would be how it would look like. Click the Create Monitor button at
 2. Fix set reminders feature.
   - user can set meal reminders and reminder to take a break.
   - This is optional to the user. 
-4. Fix recommendation for users. 
+4. Fix recommendation for users.
 5. Add the option to view and delete records for users.
-6. send telegram stickers
-7. user statistics
+6. Fix invalid time
+7. send telegram stickers
+8. user statistics
    - download a summary of what the user has eaten during a predefined interval from the database.
 
 ## Acknowledgements
