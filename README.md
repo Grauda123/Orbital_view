@@ -195,32 +195,85 @@ Here are the steps to follow before starting `gotEat`:
 
 
 ## Usage
-<!-- After completing the setup above, in the telegram search bar, type in `gotEat` or [vist](https://t.me/gotEatBot). -->
+<!-- After completing the setup above, in the telegram search bar, type in `gotEat` or [vist](https://t.me/gotEatBot). --> 
 
-- `/log_meal` + food name + number of servings -> log meal eaten 
+### Starting page 
+- to ensure that you are at the right bot, refer to the two pictures below.
+  <table border="0">
+ <tr>
+    <td><b style="font-size:15px">Landing page</b></td>
+    <td><b style="font-size:15px">After 'Start'</b></td>
+ </tr>
+ <tr>
+    <td>
+      <img src="/img/gotEat_start.png" alt="Alt text" title="gotEat landing page" style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+  </td> <!-- replace with sc-->
+    <td> <img src="/img/gotEat_start2.png" alt="Alt text" title="After 'start'" style="display: inline-block; margin: 0 auto; max-width: 300px"> <!-- replace with sc-->
+ </tr>
+</table>
+
+## `/logmeal` + food name + number of servings -> log meal eaten 
 <img
-  src="/img/log_meal.png"
+  src="/img/logmeal_start.png"
   alt="Alt text"
-  title="Optional title"
+  title="logmeal_start"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
   
-- `/view_logs` -> returns meal ID, food name, number of servings, date logged.
+### "Are you having your meal now?" 
 
-- `/update_logs` + meal_id + meal_no + meal -> to change meal log
-<img
-  src="/img/update_log.png"
+#### if you selected `Nope` 
+- select the date of entry for the meal you would like to log. Ranges -3 days from the current date.
+  <img
+  src="/img/logmeal_nope.png"
   alt="Alt text"
-  title="Optional title"
+  title="logmeal_start"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
+- Input the time of the meal in the HH:MM format (24- hour clock)
 
-- `/delete_log` + meal_id -> remove meal log
+<table border="0">
+ <tr>
+    <td><b style="font-size:15px">Log time</b></td>
+    <td><b style="font-size:15px">Log time confirmation</b></td>
+ </tr>
+ <tr>
+    <td>
+      <img src="/img/logmeal_nope1.png" alt="Alt text" title=“Log time” style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+</td> <!-- replace with sc-->
+    <td> <img src="/img/logmeal_nope2.png" alt="Alt text" title=“Log time confirmation” style="display: inline-block; margin: 0 auto; max-width: 300px"> <!-- replace with sc-->
+ </tr>
+</table>
+
+#### if you selected `Yup!` or finished inputing your time, you will be presented the next set of queries
+
+### "Please select the type of the meal:" 
+- There are four options: "Breakfast", "Lunch", "Dinner" or "Snack"
+- Select one of the four options that best describe the meal you want to log
+  
+<img
+  src="/img/logmeal_selectmeal.png"
+  alt="Alt text"
+  title="logmeal_start"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+- Your option is successfully recorded when you see "You have selected (option)"
+
+### "What have you eaten today?" 
+- input the meal that you are eating
 
   <img
-  src="/img/delete_log.png"
+  src="/img/logmeal_beefnood.png"
   alt="Alt text"
-  title="Optional title"
+  title="logmeal_start"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+- gotEat will find the option closest to the name of meal entered
+- select the option presented
+
+### "Meal entry logged successfully!" 
+
   
 ## To do
 
