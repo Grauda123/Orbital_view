@@ -37,8 +37,8 @@ List the ready features here:
 ## Technologies Used
 - python 3.11
 - mysql
-- Xampp (for hosting)
-
+- db4free (for mysql hosting)
+- UptimeRobot for continuous polling.
 
 ## Setup
 
@@ -59,131 +59,73 @@ List the ready features here:
 
 Here are the steps to follow before starting `gotEat`:
 
-#### Download [XAMMP](https://www.apachefriends.org/download.html) 
+#### Create an account on [db4free](https://www.db4free.net/signup.php) 
 
-#### Select accordingly to your operating system (ver. 8.2.4) 
-
-<table border="0">
- <tr>
-    <td><b style="font-size:15px">MacOS</b></td>
-    <td><b style="font-size:15px">Windows</b></td>
- </tr>
- <tr>
-    <td>
-      <img src="/img/xampp_mac.png" alt="Alt text" title="Optional title" style="display: inline-block; margin: 0 auto; max-width: 300px">
-
-</td> <!-- replace with sc-->
-    <td> <img src="/img/xampp_win.png" alt="Alt text" title="Optional title" style="display: inline-block; margin: 0 auto; max-width: 300px"> <!-- replace with sc-->
- </tr>
-</table>
-
-#### When you have successfully downloaded, doublic click it and run. 
-
+#### Create your own database credentials and create the account.
 <img
-  src="/img/mac-installer.png"
-  alt="Alt text"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
-
-### For macOS, you may face some error, follow these steps: 
-
-- give permission to open XAMMP by clicking 'open'
-
-<img
-  src="/img/xampp_open.png"
+  src="/img/signup_db4free.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 
-- if 'open' is not shown at first, go to 'System Preferences' -> 'Security & Privacy' -> 'General' -> 'Click the lock to make changes' -> allow XAMMP download -> 'open'
-
+#### After successful creation of the account, go to phpmyAdmin from the side navigation.
 <img
-  src="/img/xampp_adv.png"
+  src="/img/access_phpmyAdmin.png"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+### The database created can be accessed from the side panel with the value from the MySQL database name in the signup.
+<img
+  src="/img/phpmyAdmin_db.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 
-#### At setup page, proceed with 'next' 
+#### Create an account on [UptimeRobot](https://uptimerobot.com/signUp) 
 <img
-  src="/img/xampp_setup.png"
+  src="/img/uptimeRobot_createAcc.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-#### Followed by 'Finish'
+### After log in, add a new monitor which can be found in the top left
 <img
-  src="/img/xampp_finish.png"
+  src="/img/uptimeRobot_main.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
- #### After downloading, keep XAMMP running 
- <img
-  src="/img/xampp_finish2.png"
-  alt="Alt text"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
- 
- #### In XAMMP, go to 'Manage Servers'
-<img
-  src="/img/xampp_manageServers.png"
+### Details for the new Monitor:
+- For the Monitor type: select HTTP(s).
+- Friendly Name: Choose any name you would like to call your Monitor.
+- URL (or IP): enter your web server link. In the example below, we used the online IDE, replit.
+  
+  <img
+  src="/img/replit_weblink.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
   
-#### 'Start' servers Apache and MYSQL 
-<img
-  src="/img/xampp_start.png"
-  alt="Alt text"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
-
-### For windows: 
-#### Start both the Apache Module and Mysql module
-<img
-  src="/img/start.png"
-  alt="Alt text"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+- Monitoring Interval and Monitor timeout: Default values
+- Tick the alert notify checkbox. This is to notify you via email in the event when your server is down or ran into any problems.
   
-
-#### Click Config button for the Apache module and select *phpMyAdmin(config.inc.php)*
-<img
-  src="/img/apache_config.png"
+  <img
+  src="/img/uptimeRobot_alert.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-#### This image shows an example of the *phpMyAdmin(config.inc.php)*. The *$cfg['Servers'][$i]['user']* and *$cfg['Servers'][$i]['password']* field shows the username and password for authentication to mysql database.
+Overall this would be how it would look like. Click the Create Monitor button at the bottom. Now you would be able to monitor the status of the telegram bot.
 <img
-  src="/img/config.inic.php.png"
+  src="/img/uptimeRobot_main.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-#### Create a folder and inside this folder create *config.ini* file ,*main.py* file and an empty sessions folder
-<img
-  src="/img/folder_requirements.png"
-  alt="Alt text"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-#### Edit the *config.ini* file to 
-- add in the api_id, api_hash which can be found with this link(#https://my.telegram.org/auth)
-- Add in the bot token which can be found from BotFather
-(click on the API token button to retrieve the bot token)
-<img
-  src="/img/botfather.jpg"
-  alt="Alt text"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
-  
-- hostname = 127.0.0.1 (change the ip address if you are hosting online)
-- username = *$cfg['Servers'][$i]['user']* field from the *phpMyAdmin(config.inc.php)* file.
-- password = *$cfg['Servers'][$i]['password']* field from the *phpMyAdmin(config.inc.php)* file.
-- database = give it any name
 
 ### Import the various packages
 #### configparser is used to read the config.ini file that was created
